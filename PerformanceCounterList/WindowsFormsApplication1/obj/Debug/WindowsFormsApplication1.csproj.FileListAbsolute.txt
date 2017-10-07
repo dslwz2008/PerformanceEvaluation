@@ -1,0 +1,7 @@
+E:\Programs\PerformanceCounterList\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+E:\Programs\PerformanceCounterList\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+E:\Programs\PerformanceCounterList\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+E:\Programs\PerformanceCounterList\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+E:\Programs\PerformanceCounterList\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+E:\Programs\PerformanceCounterList\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+E:\Programs\PerformanceCounterList\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
