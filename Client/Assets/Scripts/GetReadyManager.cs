@@ -254,9 +254,11 @@ public class GetReadyManager : MonoBehaviour {
             case "Start":
             {
                 //给主场景使用
-                PlayerPrefs.SetInt("EnterIndex", dataObject.GetInt("EnterIndex"));
+                PlayerPrefs.SetInt("EnterIndex", 0);
+//                PlayerPrefs.SetInt("EnterIndex", dataObject.GetInt("EnterIndex"));
                 //正确出口
-                PlayerPrefs.SetInt("RightExit", dataObject.GetInt("RightExit"));
+                PlayerPrefs.SetInt("RightExit", 1);
+//                PlayerPrefs.SetInt("RightExit", dataObject.GetInt("RightExit"));
                 // Remove SFS2X listeners and re-enable interface before moving to the main game scene
                 reset();
 

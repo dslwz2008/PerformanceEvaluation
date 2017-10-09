@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using FastFileLog;
 using Sfs2X;
 using Sfs2X.Core;
 using Sfs2X.Entities;
@@ -272,6 +273,15 @@ public class MainManager : MonoBehaviour
         ArrayList changedVars = (ArrayList)evt.Params["changedVars"];
         SFSUser user = (SFSUser)evt.Params["user"];
         if (user == sfs.MySelf) return;
+
+        //记录下所有远程用户数据
+        string logString = string.Format("{0},{1},{2},{3},{4},{5},{6}",
+                Time.time, user.Name, (float)user.GetVariable("PosX").GetDoubleValue(),
+                (float)user.GetVariable("PosY").GetDoubleValue(),
+                (float)user.GetVariable("PosZ").GetDoubleValue(),
+                (float)user.GetVariable("RotY").GetDoubleValue(),
+                user.GetVariable("Animation").GetStringValue());
+        LogManager.Log(localPlayer.name, logString);
 
         try
         {

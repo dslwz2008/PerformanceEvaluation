@@ -74,7 +74,7 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 0, b: 0, a: 1}
     - _Color1in: {r: 0, g: 0, b: 0, a: 1}
-    - _Color1out: {r: 0.8235601, g: 0.88739586, b: 0.31603137, a: 1}
+    - _Color1out: {r: 0.20147553, g: 0.98374355, b: 0.97304916, a: 1}
     - _Color2in: {r: 1, g: 1, b: 1, a: 1}
     - _Color2out: {r: 1, g: 1, b: 1, a: 1}
     - _Color3in: {r: 1, g: 1, b: 1, a: 1}

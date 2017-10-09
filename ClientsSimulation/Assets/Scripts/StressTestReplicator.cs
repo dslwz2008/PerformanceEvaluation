@@ -74,6 +74,17 @@ public class StressTestReplicator : MonoBehaviour
         }
     }
 
+
+    public void ClientsDisconnect()
+    {
+        for (int i = 0; i < SimPlayers.Count; i++)
+        {
+            GameObject player = SimPlayers[i];
+            player.GetComponent<SimpleClient>().Disconnect();
+            Thread.Sleep(20);
+        }
+    }
+
     // Update is called once per frame
     void Update () {
 		

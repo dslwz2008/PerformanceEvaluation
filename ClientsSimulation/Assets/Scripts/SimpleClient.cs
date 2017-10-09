@@ -91,6 +91,15 @@ public class SimpleClient : MonoBehaviour
         sfs.Connect(cfg);
     }
 
+    public void Disconnect()
+    {
+        // Disconnect
+        sfs.Disconnect();
+
+        // Remove SFS2X listeners and re-enable interface
+        reset();
+    }
+
     private void reset()
     {
         // Remove SFS2X listeners
