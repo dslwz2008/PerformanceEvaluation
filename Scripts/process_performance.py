@@ -6,7 +6,7 @@ import time
 from datetime import datetime
 
 # get from taskmgr
-target_pid = 13188
+target_pid = 11520
 
 # Example Data:
 # {'以太网': snetio(bytes_sent=2693730598, bytes_recv=17211723862, packets_sent=4454361, packets_recv=0, errin=0, errout=0, dropin=0, dropout=0),
