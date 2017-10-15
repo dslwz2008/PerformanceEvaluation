@@ -73,7 +73,7 @@ public class MainManager : MonoBehaviour
         sfs.AddEventListener(SFSEvent.USER_VARIABLES_UPDATE, OnUserVariableUpdate);
         sfs.AddEventListener(SFSEvent.PROXIMITY_LIST_UPDATE, OnProximityListUpdate);
 //        sfs.AddEventListener(SFSEvent.EXTENSION_RESPONSE, OnExtensionResponse);
-        sfs.EnableLagMonitor(true);
+        sfs.EnableLagMonitor(true, 1);
         sfs.AddEventListener(SFSEvent.PING_PONG, OnPingPongEvent);
 
         // spawn local player
@@ -426,6 +426,9 @@ public class MainManager : MonoBehaviour
     {
         int lagValue = (int)evt.Params["lagValue"];//milliseconds
         NetworkLagText.text = lagValue.ToString();
+        string logString = string.Format("{0},{1}", "NetworkLag", lagValue);
+        //一体机上写到logcat进行捕捉
+        Debug.Log(logString);
     }
 
     //----------------------------------------------------------

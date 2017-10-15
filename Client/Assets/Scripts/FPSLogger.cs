@@ -30,7 +30,7 @@ public class FPSLogger : MonoBehaviour {
 
     void Start()
     {
-        string filename = string.Format("FPSLog_{0}.csv", DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss"));
+        string filename = "FPSLog.csv";
         LogManager.Register(gameObject.name, filename, false, true);
         StartCoroutine(FPS());
     }
@@ -56,7 +56,7 @@ public class FPSLogger : MonoBehaviour {
             accum = 0.0F;
             frames = 0;
 
-            string logString = string.Format("{0}", sFPS);
+            string logString = string.Format("{0},{1}", "FPS", sFPS);
             LogManager.Log(gameObject.name, logString);
 
             yield return new WaitForSeconds(frequency);

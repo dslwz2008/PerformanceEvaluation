@@ -73,7 +73,7 @@ public class MainManager : MonoBehaviour
         sfs.AddEventListener(SFSEvent.USER_VARIABLES_UPDATE, OnUserVariableUpdate);
         sfs.AddEventListener(SFSEvent.PROXIMITY_LIST_UPDATE, OnProximityListUpdate);
 //        sfs.AddEventListener(SFSEvent.EXTENSION_RESPONSE, OnExtensionResponse);
-        sfs.EnableLagMonitor(true);
+        sfs.EnableLagMonitor(true, 1);
         sfs.AddEventListener(SFSEvent.PING_PONG, OnPingPongEvent);
 
         FillUI();
@@ -393,6 +393,9 @@ public class MainManager : MonoBehaviour
     {
         int lagValue = (int)evt.Params["lagValue"];//milliseconds
         NetworkLagText.text = lagValue.ToString();
+        string logString = string.Format("{0},{1}", "NetworkLag", lagValue);
+        //和FPS写在一起吧，省得再多解析一个文件了
+        LogManager.Log(gameObject.name, logString);
     }
 
     //----------------------------------------------------------
