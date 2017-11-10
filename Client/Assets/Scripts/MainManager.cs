@@ -53,8 +53,8 @@ public class MainManager : MonoBehaviour
     private Dictionary<SFSUser, GameObject> remotePlayers = new Dictionary<SFSUser, GameObject>();
     private Dictionary<SFSUser, UserData> remoteUserData = new Dictionary<SFSUser, UserData>();
 
-    private const string RoleLeader = "队长";
-    private const string RoleGroupMemeber = "队员";
+    private const string RoleLeader = "Leader";
+    private const string RoleGroupMemeber = "Member";
     private string RightExitString;
     private string WrongExitString;
 
@@ -95,25 +95,25 @@ public class MainManager : MonoBehaviour
         GroupFlag.material.SetColor("_Color1out", color);
         GroupSizeText.text = groupSize.ToString();
         RoleText.text = leader == 1 ? RoleLeader : RoleGroupMemeber;
-        int rightExit = PlayerPrefs.GetInt("RightExit");
-        //AB出口逃生
-        if (rightExit == 0)
-        {
-            BarrierAB.SetActive(false);
-            RightExitString = "AB";
-            WrongExitString = "CD";
-        }
-        else
-        {
-            BarrierCD.SetActive(false);
-            RightExitString = "CD";
-            WrongExitString = "AB";
-        }
-        if (PlayerPrefs.GetInt("KnowTruth") == 1)
-        {
-            TruthText.enabled = true;
-            TruthText.text = string.Format("地铁{0}出口着火，请从{1}出口逃生！", WrongExitString, RightExitString);
-        }
+//        int rightExit = PlayerPrefs.GetInt("RightExit");
+//        //AB出口逃生
+//        if (rightExit == 0)
+//        {
+//            BarrierAB.SetActive(false);
+//            RightExitString = "AB";
+//            WrongExitString = "CD";
+//        }
+//        else
+//        {
+//            BarrierCD.SetActive(false);
+//            RightExitString = "CD";
+//            WrongExitString = "AB";
+//        }
+//        if (PlayerPrefs.GetInt("KnowTruth") == 1)
+//        {
+//            TruthText.enabled = true;
+//            TruthText.text = string.Format("地铁{0}出口着火，请从{1}出口逃生！", WrongExitString, RightExitString);
+//        }
     }
 
     void FixedUpdate()

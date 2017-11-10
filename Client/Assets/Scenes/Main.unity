@@ -271,8 +271,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -232.6, y: 151.6}
-  m_SizeDelta: {x: 30, y: 30}
+  m_AnchoredPosition: {x: -219.9, y: 151.6}
+  m_SizeDelta: {x: 60, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &105022433
 MonoBehaviour:
@@ -306,7 +306,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u961F\u957F"
+  m_Text: Leader
 --- !u!222 &105022434
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4535,7 +4535,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -291.8, y: 189}
+  m_AnchoredPosition: {x: -281.2, y: 189}
   m_SizeDelta: {x: 60, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &501777698
@@ -25319,7 +25319,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -366, y: 154}
-  m_SizeDelta: {x: 30, y: 30}
+  m_SizeDelta: {x: 60, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &851635400
 MonoBehaviour:
@@ -25353,7 +25353,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5C0F\u7EC4"
+  m_Text: Group
 --- !u!222 &851635401
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -32672,7 +32672,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -311.6, y: 189}
-  m_SizeDelta: {x: 150, y: 30}
+  m_SizeDelta: {x: 200, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1234084954
 MonoBehaviour:
@@ -32706,7 +32706,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u7F51\u7EDC\u5EF6\u8FDF\uFF1A          \u6BEB\u79D2"
+  m_Text: "Network Lag\uFF1A          ms"
 --- !u!222 &1234084955
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -36196,7 +36196,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u79D2"
+  m_Text: s
 --- !u!222 &1501988658
 CanvasRenderer:
   m_ObjectHideFlags: 0
